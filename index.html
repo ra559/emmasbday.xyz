@@ -1,275 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arimo&family=Lato:wght@300&family=Libre+Baskerville:ital@1&family=Quicksand:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
-    <title>Gabby and Chris Baby shower invitation</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Site</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    </head>
     <style>
-      * {
-        transition: all 0.2s ease-in-out;
-      }
+        * {
+            transition: all 0.2s ease-in-out;
+        }
 
-      body {
-        display: grid;
-        place-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: "Open Sans", sans-serif;
-        line-height: 1rem;
-      }
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "Open Sans", sans-serif;
+            line-height: 1rem;
+        }
 
-      .card {
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;
-      }
+        .card {
+            position: relative;
+            height: 85vh;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            background-image: url('mulan.jpg');
+            background-size: auto;
+            background-repeat: no-repeat;
+            margin: auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
 
-      .text {
-        height: 85vh;
-        width: 80vw;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1em;
-        overflow: hidden;
-        background: radial-gradient(
-          circle,
-          rgb(241, 198, 202) 0%,
-          rgba(255, 255, 255, 0) 50%
-        );
-      }
-
-      .msg1,
-      .msg2,
-      .msg3,
-      .msg5 {
-        font-size: 2rem;
-        font-weight: medium;
-      }
-      .msg2 {
-        font-family: "Clicker Script", cursive;
-        font-size: 7rem;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        font-weight: medium;
-        color: rgb(210, 35, 35);
-      }
-      .msg1{
-        line-height: 1.7em;
-        color: #db2771;
-      }
-      .msg3{
-        letter-spacing: 0.5em;
-        color: #614bbc;
-      }
-      .msg4, .msg5, .msg6{
-        font-size: 1.5em;
-        text-transform: uppercase;
-        line-height: 1.5em;
-        color: #db2771;
-      }
-
-    .msg6{
-        font-size: 1em;
-    }
-
-      @media screen and (max-width: 360px) {
         .text {
-          height: 85vh;
-          width: 90vw;
+            height: 85vh;
+            width: 80vw;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            overflow: hidden;
+            background: radial-gradient(circle, rgb(245, 216, 219) 0%, rgba(255, 255, 255, 0) 40%);
         }
-        .msg1,
-        .msg2,
-        .msg3,
-        .msg4,
-        .msg5 {
-          font-size: 1rem;
-          margin: 0px;
-          margin-top: 2rem;
-        }
-        .msg1 {
-          font-size: 2rem;
-        }
-        .msg2,
-        .msg3,
-        .msg5 {
-          font-size: 1rem;
-        }
-        .msg4 {
-          font-size: 2rem;
-        }
-      }
-
-      @media screen and (max-width: 411px) {
-        .text {
-          height: 85vh;
-          width: 90vw;
-        }
-        .msg1,
-        .msg2,
-        .msg3,
-        .msg4,
-        .msg5 {
-          font-size: 1rem;
-          margin: 0px;
-          margin-top: 2rem;
-        }
-        .msg1 {
-          font-size: 2rem;
-        }
-        .msg2,
-        .msg3,
-        .msg5 {
-          font-size: 1rem;
-        }
-        .msg4 {
-          font-size: 2rem;
-        }
-      }
-
-      @media screen and (max-width: 320px) {
-        .text {
-          height: 85vh;
-          width: 95vw;
-        }
-        .msg1,
-        .msg2,
-        .msg3,
-        .msg4,
-        .msg5 {
-          font-size: 1rem;
-          margin: 0px;
-          margin-top: 2rem;
-        }
-        .msg1 {
-          font-size: 2rem;
-        }
-        .msg2,
-        .msg3,
-        .msg5 {
-          font-size: 1rem;
-        }
-        .msg4 {
-          font-size: 2rem;
-        }
-      }
-
-      @media screen and (max-width: 414px) {
-        .text {
-          height: 85vh;
-          width: 95vw;
-        }
-        .msg1,
-        .msg2,
-        .msg3,
-        .msg4,
-        .msg5 {
-          font-size: 1rem;
-          margin: 0px;
-          margin-top: 2rem;
-        }
-        .msg1 {
-          font-size: 2rem;
-        }
-        .msg2,
-        .msg3,
-        .msg5 {
-          font-size: 1rem;
-        }
-        .msg4 {
-          font-size: 2rem;
-        }
-      }
-
-      @media screen and (max-width: 768px) {
-        .msg2{
-            font-size: 7rem !important;
-            margin-top: 4rem !important;
-            margin-bottom: 4rem !important;
-        }
-        .msg3{
-            font-size: 1.5rem !important;
-        }
-        .text {
-          height: 85vh;
-          width: 95vw;
-        }
-        .msg1,
-        .msg4,
-        .msg5 {
-          font-size: 1rem;
-          margin: 0px;
-          margin-top: 3rem;
-        }
-        .msg1 {
-          font-size: 4rem;
-        }
-        .msg5 {
-          font-size: 2rem;
-        }
-        .msg4 {
-          font-size: 4rem;
-        }
-        
-      }
-
-      @media screen and (max-width: 768px) {
-        .text {
-          height: 85vh;
-          width: 95vw;
-        }
-        .msg1,
-        .msg2,
-        .msg3,
-        .msg4,
-        .msg5 {
-          font-size: 1rem;
-          margin: 0px;
-          margin-top: 2rem;
-        }
-        .msg1 {
-          font-size: 2rem;
-        }
-        .msg2,
-        .msg3,
-        .msg5 {
-          font-size: 1rem;
-        }
-        .msg4 {
-          font-size: 2rem;
-        }
-      }
-      video {
+        video {
         object-fit: cover;
         width: 100vw;
         height: 100vh;
@@ -279,28 +59,29 @@
         opacity: 0.5;
       }
     </style>
-  </head>
-
-  <body id="body">
-    <div class="video-container">
-      <video playsinline autoplay muted loop>
-        <source src="video.webm" type="video/webm" />
-        <source src="video.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="card">
-      <div class="text">
-        <p class="msg1">JOIN US
-        <br>TO CELEBRATE</p>
-        <p class="msg2">Emma's</p>
-        <p class="msg3">1ST BIRTHDAY</p>
-        <p class="msg4">Saturday, October 8th
-        <br>2PM - 6PM</p>
-        <p class="msg5">319 Rutherford Blvd,</br>
-            Clifton, New Jersey</p>
-        <p class="msg6">RSVP TO Gabby<br>
-    973-336-2937</p>
-      </div>
-    </div>
-  </body>
-</html>
+    <body>
+        <div class="container">
+            <div class="video-container">
+                <video playsinline autoplay muted loop>
+                  <source src="video.webm" type="video/webm" />
+                  <source src="video.mp4" type="video/mp4" />
+                </video>
+              </div>
+            <div class="card">
+                <div class="text">
+                    <div class="text">
+                        <p class="msg">JOIN US<br>TO CELEBRATE</p>
+                        <p class="msg">Emma's</p>
+                        <p class="msg">1ST BIRTHDAY</p>
+                        <p class="msg">Saturday, October 8th<br>2PM - 6PM</p>
+                        <p class="msg">319 Rutherford Blvd,</p>
+                    </br>Clifton, New Jersey</p>
+                <p class="msg">RSVP TO
+                </p>
+                <p class="msg">Gabby 973-336-2937</p>
+                <p class="msg">Chris:  973-771-8764</p>
+                <p class="msg">Deya: 973-519-3018</p>
+            </div>
+        </div>
+    </body>
+</html></div></body></html>
