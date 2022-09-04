@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Site</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        * {
+            transition: all 0.2s ease-in-out;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "Open Sans", sans-serif;
+            line-height: 1rem;
+        }
+
+        .card {
+            position: relative;
+            height: 90vh;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            background-image: url('mulan.jpg');
+            background-size: auto;
+            background-repeat: no-repeat;
+            margin: auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+        }
+
+        .text {
+            height: 85vh;
+            width: 90vw;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            overflow: hidden;
+            background: radial-gradient(circle, rgb(245, 216, 219) 0%, rgba(255, 255, 255, 0) 40%);
+        }
+        video {
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="video-container">
+                <video playsinline autoplay muted loop>
+                    <source src="video.webm" type="video/webm"/>
+                    <source src="video.mp4" type="video/mp4"/>
+                </video>
+            </div>
+            <div class="card">
+                <div class="text">
+                    <div class="text">
+                        <p class="msg">JOIN US<br>TO CELEBRATE</p>
+                        <p class="msg">Emma's</p>
+                        <p class="msg">1ST BIRTHDAY</p>
+                        <p class="msg">Saturday, October 8th<br>2PM - 6PM</p>
+                        <p class="msg">319 Rutherford Blvd,</p>
+                    </br>Clifton, New Jersey</p>
+                <p class="msg">RSVP TO
+                </p>
+                <p class="msg">Gabby 973-336-2937</p>
+                <p class="msg">Chris:  973-771-8764</p>
+                <p class="msg">Deya: 973-519-3018</p>
+            </div>
+        </div>
+    </body>
+</html></div></body></html>
