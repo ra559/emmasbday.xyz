@@ -1,34 +1,39 @@
-body{
+body {
     background: #db2771;
     margin-top: 0px;
 }
-p{margin: 0px}
 
-.card{
+p {
+    margin: 0px
+}
+
+.card {
     width: 70%;
     margin: auto;
     text-align: center;
     height: 100%;
     width: 100%;
-    background:  url("mulan.jpeg") no-repeat;
+    background: url("mulan.jpeg") no-repeat;
     background-position: 50% 50%;
     background-size: 800px 1080px;
     margin-top: 1% !important;
     overflow: hidden;
-
-
 }
-.text{
-    font-family: "Open Sans", sans-serif;;
+
+.text {
+    font-family: "Open Sans", sans-serif;
     font-size: 1.4rem;
     color: aliceblue;
     text-shadow: 2px 2px #8c52ff;
 }
-.text p{
+
+.text p {
     margin: 1rem 1rem
 }
-.text p a{
-    color:#8c52ff;;
+
+.text p a {
+    color: #8c52ff;
+    
     text-decoration: none;
     text-shadow: 2px 2px black
 }
@@ -37,5 +42,17 @@ p{margin: 0px}
 .msg2 {
     font-family: "Clicker Script", cursive;
     font-size: 6rem;
-  }
+}
 
+@media screen and (max-width: 414px) {
+    .card {
+        background: url("mulan.jpeg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 450px 750px;
+    }
+    .text{
+        font-size: 1rem;
+    }
+
+
+}
