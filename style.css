@@ -1,275 +1,41 @@
-* {
-  transition: all 0.2s ease-in-out;
+body{
+    background: #db2771;
+    margin-top: 0px;
+}
+p{margin: 0px}
+
+.card{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background:  url("mulan.jpeg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 800px 1080px;
+    margin-top: 0 !important;
+    overflow: hidden;
+
+
+}
+.text{
+    font-family: "Open Sans", sans-serif;;
+    font-size: 1.4rem;
+    color: aliceblue;
+    text-shadow: 2px 2px #8c52ff;
+}
+.text p{
+    margin: 1rem 1rem
+}
+.text p a{
+    color:#8c52ff;;
+    text-decoration: none;
+    text-shadow: 2px 2px black
 }
 
-body {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1rem;
-}
-
-.card {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-}
-
-.text {
-  height: 85vh;
-  width: 80vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  overflow: hidden;
-  background: radial-gradient(
-    circle,
-    rgb(241, 198, 202) 0%,
-    rgba(255, 255, 255, 0) 50%
-  );
-}
-
-.msg1,
-.msg2,
-.msg3,
-.msg5 {
-  font-size: 2rem;
-  font-weight: medium;
-}
-
+/*Emma*/
 .msg2 {
-  font-family: "Clicker Script", cursive;
-  font-size: 7rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  font-weight: medium;
-  color: rgb(210, 35, 35);
-}
-
-.msg1 {
-  line-height: 1.7em;
-  color: #db2771;
-}
-
-.msg3 {
-  letter-spacing: 0.5em;
-  color: #614bbc;
-}
-
-.msg4,
-.msg5,
-.msg6 {
-  font-size: 1.5em;
-  text-transform: uppercase;
-  line-height: 1.5em;
-  color: #db2771;
-}
-
-.msg6 {
-  font-size: 1em;
-}
-
-@media screen and(max-width: 360px) {
-  .text {
-    height: 85vh;
-    width: 90vw;
+    font-family: "Clicker Script", cursive;
+    font-size: 6rem;
   }
 
-  .msg1,
-  .msg2,
-  .msg3,
-  .msg4,
-  .msg5 {
-    font-size: 1rem;
-    margin: 2rem 0 0;
-  }
-
-  .msg1 {
-    font-size: 2rem;
-  }
-
-  .msg2,
-  .msg3,
-  .msg5 {
-    font-size: 1rem;
-  }
-
-  .msg4 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and(max-width: 411px) {
-  .text {
-    height: 85vh;
-    width: 90vw;
-  }
-
-  .msg1,
-  .msg2,
-  .msg3,
-  .msg4,
-  .msg5 {
-    font-size: 1rem;
-    margin: 2rem 0 0;
-  }
-
-  .msg1 {
-    font-size: 2rem;
-  }
-
-  .msg2,
-  .msg3,
-  .msg5 {
-    font-size: 1rem;
-  }
-
-  .msg4 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and(max-width: 320px) {
-  .text {
-    height: 85vh;
-    width: 95vw;
-  }
-
-  .msg1,
-  .msg2,
-  .msg3,
-  .msg4,
-  .msg5 {
-    font-size: 1rem;
-    margin: 2rem 0 0;
-  }
-
-  .msg1 {
-    font-size: 2rem;
-  }
-
-  .msg2,
-  .msg3,
-  .msg5 {
-    font-size: 1rem;
-  }
-
-  .msg4 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and(max-width: 414px) {
-  .text {
-    height: 85vh;
-    width: 95vw;
-  }
-
-  .msg1,
-  .msg2,
-  .msg3,
-  .msg4,
-  .msg5 {
-    font-size: 1rem;
-    margin: 2rem 0 0;
-  }
-
-  .msg1 {
-    font-size: 2rem;
-  }
-
-  .msg2,
-  .msg3,
-  .msg5 {
-    font-size: 1rem;
-  }
-
-  .msg4 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and(max-width: 768px) {
-  .msg2 {
-    font-size: 7rem !important;
-    margin-top: 4rem !important;
-    margin-bottom: 4rem !important;
-  }
-
-  .msg3 {
-    font-size: 1.5rem !important;
-  }
-
-  .text {
-    height: 85vh;
-    width: 95vw;
-  }
-
-  .msg1,
-  .msg4,
-  .msg5 {
-    font-size: 1rem;
-    margin: 3rem 0 0;
-  }
-
-  .msg1 {
-    font-size: 4rem;
-  }
-
-  .msg5 {
-    font-size: 2rem;
-  }
-
-  .msg4 {
-    font-size: 4rem;
-  }
-}
-
-@media screen and(max-width: 768px) {
-  .text {
-    height: 85vh;
-    width: 95vw;
-  }
-
-  .msg1,
-  .msg2,
-  .msg3,
-  .msg4,
-  .msg5 {
-    font-size: 1rem;
-    margin: 2rem 0 0;
-  }
-
-  .msg1 {
-    font-size: 2rem;
-  }
-
-  .msg2,
-  .msg3,
-  .msg5 {
-    font-size: 1rem;
-  }
-
-  .msg4 {
-    font-size: 2rem;
-  }
-}
-
-video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-}
